@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>Question2</title>
+      <script>
+            if(document.images) 
+            {
+               var image1 = new Image(); // Preload an image
+               image1.src = "pic1.jpg";
+               var image2 = new Image(); // Preload second image
+               image2.src = "pic2.jpg";
+               var image3 = new Image(); // Preload second image
+               image3.src = "pic3.jpg";
+            }
+      </script>
+      <style>
+            img
+            {
+            width:200px;
+            height:200px;
+            padding:25px 25px 25px 25px;
+            }
+      </style>
+   </head>
+   <body>
+      <a href = "#" onMouseOver = "document.myImage1.src = image2.src;" onMouseOut = "document.myImage1.src = image1.src;">
+         <img name = "myImage1" src = "https://th.bing.com/th/id/OIP.H_WAa1qer7pylE4m37vfBAHaEK?w=303&h=180&c=7&o=5&dpr=1.25&pid=1.7" />
+      <a href = "#" onMouseOver = "document.myImage2.src = image3.src;" onMouseOut = "document.myImage2.src = image2.src;">
+         <img name = "myImage2" src = "https://th.bing.com/th/id/OIP.0ABXwLhHv_NGUG3FqCkhBAHaDV?w=318&h=157&c=7&o=5&dpr=1.25&pid=1.7" />
+      <a href = "#" onMouseOver = "document.myImage3.src = image1.src;" onMouseOut = "document.myImage3.src = image3.src;">
+         <img name = "myImage3" src = "https://th.bing.com/th/id/OIP.yQAcqMRm0yQs0G4M6VTBtwHaEK?w=278&h=180&c=7&o=5&dpr=1.25&pid=1.7" />
+      </a>
+   </body>
+</html>
